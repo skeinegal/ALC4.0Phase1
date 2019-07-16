@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button, yourButton;
+    private Button button, aboutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        yourButton = findViewById(R.id.button2);
+        aboutButton = findViewById(R.id.button2);
         button = findViewById(R.id.aboutButton);
 
         //Goes to AboutALC.
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Goes to Profile.
-        yourButton.setOnClickListener(new View.OnClickListener() {
+        aboutButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, MyProfile.class));
             }

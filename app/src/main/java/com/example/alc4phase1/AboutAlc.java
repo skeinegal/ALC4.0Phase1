@@ -16,7 +16,7 @@ public class AboutAlc extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_alc);
 
-        WebView webView = findViewById(R.id.load_url_web_view);
+        AboutAlc = findViewById(R.id.load_url_web_view);
         AboutAlc.setWebViewClient(new WebViewClient() {
             @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
@@ -24,6 +24,8 @@ public class AboutAlc extends AppCompatActivity {
             }
         });
         AboutAlc.loadUrl(baseUrl);
+
+
     }
 
     @Override
@@ -35,5 +37,5 @@ public class AboutAlc extends AppCompatActivity {
         }
     }
 
-}
 
+}
