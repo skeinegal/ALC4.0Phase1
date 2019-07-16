@@ -4,6 +4,7 @@ import android.net.http.SslError;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.webkit.SslErrorHandler;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -17,6 +18,11 @@ public class AboutAlc extends AppCompatActivity {
         setContentView(R.layout.activity_about_alc);
 
         AboutAlc = findViewById(R.id.load_url_web_view);
+        AboutAlc.getSettings().setJavaScriptEnabled(true);
+        WebSettings webSettings = AboutAlc.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setUseWideViewPort(true);
+        webSettings.setDomStorageEnabled(true);
         AboutAlc.setWebViewClient(new WebViewClient() {
             @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
