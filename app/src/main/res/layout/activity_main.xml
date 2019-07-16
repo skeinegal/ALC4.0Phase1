@@ -15,6 +15,7 @@
         android:layout_marginEnd="8dp"
         android:background="@android:color/holo_orange_light"
         android:text="@string/about_alc"
+        android:fontFamily="@font/america_pro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/welcome_text_view" />
@@ -28,6 +29,7 @@
         android:layout_marginEnd="8dp"
         android:background="@android:color/holo_orange_light"
         android:text="@string/my_profile"
+        android:fontFamily="@font/america_pro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/aboutButton" />
@@ -39,14 +41,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="8dp"
-        android:fontFamily="@font/veronica_pro"
+        android:fontFamily="@font/america_pro"
         android:text="@string/heading_text_view"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
-        tools:fontFamily="@font/veronica_pro"
+        tools:fontFamily="@font/america_pro"
         tools:text="@string/heading_text_view" />
 
     <android.support.constraint.Guideline
